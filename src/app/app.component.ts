@@ -16,9 +16,19 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
+      title: 'About',
       url: '/list',
       icon: 'list'
+    },
+    {
+      title: 'Carbon Dioxide',
+      url: '/list',
+      icon: 'analytics'
+    },
+    {
+      title: 'Electricity',
+      url: '/list',
+      icon: 'outlet'
     }
   ];
 
