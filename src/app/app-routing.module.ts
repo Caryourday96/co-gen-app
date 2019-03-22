@@ -21,10 +21,18 @@ const routes: Routes = [
   },
   { 
     path: 'electricity', 
-  loadChildren: './electricity/electricity.module#ElectricityPageModule' },  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
-  { path: 'signup', loadChildren: './signup/signup.module#SignupPageModule' }
+  loadChildren: './electricity/electricity.module#ElectricityPageModule' 
+  },
 
+  { 
+    path: 'login', 
+  loadChildren: './login/login.module#LoginPageModule' 
+  },
 
+  { 
+    path: 'signup', 
+    loadChildren: './signup/signup.module#SignupPageModule' 
+  }
 ];
 
 @NgModule({

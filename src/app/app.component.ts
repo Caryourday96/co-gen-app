@@ -22,12 +22,12 @@ export class AppComponent {
     },
     {
       title: 'Carbon Dioxide',
-      url: '/list',
+      url: '/carbon',
       icon: 'analytics'
     },
     {
       title: 'Electricity',
-      url: '/list',
+      url: '/electricity',
       icon: 'outlet'
     }
   ];
