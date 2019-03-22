@@ -15,7 +15,13 @@ const routes: Routes = [
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
   },
-  { path: 'electricity', loadChildren: './electricity/electricity.module#ElectricityPageModule' }
+  { 
+    path: 'carbon', 
+  loadChildren: './carbon/carbon.module#CarbonPageModule' 
+  },
+  { 
+    path: 'electricity', 
+  loadChildren: './electricity/electricity.module#ElectricityPageModule' }
 
 ];
 
