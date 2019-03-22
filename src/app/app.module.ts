@@ -15,7 +15,6 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
  
 import * as firebase from '@firebase/app';
 
-
 import '@firebase/firestore'
 
 
