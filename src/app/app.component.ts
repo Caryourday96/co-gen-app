@@ -40,6 +40,12 @@ export class AppComponent {
       url: '/e-weekly',
       icon: 'outlet'
     }
+    ,
+    {
+      title: 'CO2-Daily',
+      url: '/co2-daily',
+      icon: 'outlet'
+    }
   ];
 
   constructor(
