@@ -31,8 +31,13 @@ export class AppComponent {
       icon: 'outlet'
     },
     {
-      title: 'E-DAILY',
+      title: 'E-Daily',
       url: '/e-daily',
+      icon: 'outlet'
+    },
+    {
+      title: 'E-Weekly',
+      url: '/e-weekly',
       icon: 'outlet'
     }
   ];
