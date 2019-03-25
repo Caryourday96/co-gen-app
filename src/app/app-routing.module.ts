@@ -32,8 +32,13 @@ const routes: Routes = [
   { 
     path: 'signup', 
     loadChildren: './signup/signup.module#SignupPageModule' 
-  },  { path: 'e-daily', loadChildren: './e-daily/e-daily.module#EDailyPageModule' },
-  { path: 'e-weekly', loadChildren: './e-weekly/e-weekly.module#EWeeklyPageModule' }
+  },
+  { path: 'e-daily',
+   loadChildren: './e-daily/e-daily.module#EDailyPageModule' },
+
+
+  { path: 'e-weekly', 
+  loadChildren: './e-weekly/e-weekly.module#EWeeklyPageModule' }
 
 ];
 
