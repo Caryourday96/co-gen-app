@@ -42,6 +42,11 @@ export class AppComponent {
     }
     ,
     {
+      title: 'E-monthly',
+      url: '/e-monthly',
+      icon: 'outlet'
+    },
+    {
       title: 'CO2-Daily',
       url: '/co2-daily',
       icon: 'outlet'

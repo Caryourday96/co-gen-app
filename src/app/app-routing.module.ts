@@ -38,8 +38,9 @@ const routes: Routes = [
 
 
   { path: 'e-weekly', 
-  loadChildren: './e-weekly/e-weekly.module#EWeeklyPageModule' },  { path: 'co2-daily', loadChildren: './co2-daily/co2-daily.module#CO2DailyPageModule' },
-  { path: 'co2-weekly', loadChildren: './co2-weekly/co2-weekly.module#CO2WeeklyPageModule' }
+  loadChildren: './e-weekly/e-weekly.module#EWeeklyPageModule' },
+  { path: 'co2-daily', loadChildren: './co2-daily/co2-daily.module#CO2DailyPageModule' },
+  { path: 'e-monthly', loadChildren: './e-monthly/e-monthly.module#EMonthlyPageModule' }
 
 
 ];
