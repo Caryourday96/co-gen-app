@@ -33,15 +33,9 @@ const routes: Routes = [
     path: 'signup', 
     loadChildren: './signup/signup.module#SignupPageModule' 
   },
-  { path: 'e-daily',
-   loadChildren: './e-daily/e-daily.module#EDailyPageModule' },
-
-
-  { path: 'e-weekly', 
-  loadChildren: './e-weekly/e-weekly.module#EWeeklyPageModule' },
-  { path: 'co2-daily', loadChildren: './co2-daily/co2-daily.module#CO2DailyPageModule' },
-  { path: 'e-monthly', loadChildren: './e-monthly/e-monthly.module#EMonthlyPageModule' }
-
+  { path: 'e-daily', loadChildren: './e-daily/e-daily.module#EDailyPageModule' },
+  { path: 'e-weekly', loadChildren: './e-weekly/e-weekly.module#EWeeklyPageModule' },
+  { path: 'about', loadChildren: './about/about.module#AboutPageModule' }
 
 ];
 

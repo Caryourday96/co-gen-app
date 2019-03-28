@@ -17,8 +17,8 @@ export class AppComponent {
     },
     {
       title: 'About',
-      url: '/list',
-      icon: 'list'
+      url: '/about',
+      icon: 'information-circle'
     },
     {
       title: 'Carbon Dioxide',
