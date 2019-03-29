@@ -3,11 +3,11 @@ import {Chart} from 'chart.js';
 import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-co2-weekly',
-  templateUrl: './co2-weekly.page.html',
-  styleUrls: ['./co2-weekly.page.scss'],
+  selector: 'app-co2-monthly',
+  templateUrl: './co2-monthly.page.html',
+  styleUrls: ['./co2-monthly.page.scss'],
 })
-export class CO2WeeklyPage implements OnInit {
+export class Co2MonthlyPage implements OnInit {
 
   @ViewChild('bubbleCanvas') bubbleCanvas
   bubbleChart: any;
@@ -54,5 +54,4 @@ export class CO2WeeklyPage implements OnInit {
   });
   }
   }
-  
   
