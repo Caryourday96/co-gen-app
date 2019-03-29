@@ -29,27 +29,6 @@ export class AppComponent {
       title: 'Electricity',
       url: '/electricity',
       icon: 'outlet'
-    },
-    {
-      title: 'E-Daily',
-      url: '/e-daily',
-      icon: 'outlet'
-    },
-    {
-      title: 'E-Weekly',
-      url: '/e-weekly',
-      icon: 'outlet'
-    }
-    ,
-    {
-      title: 'E-monthly',
-      url: '/e-monthly',
-      icon: 'outlet'
-    },
-    {
-      title: 'CO2-Daily',
-      url: '/co2-daily',
-      icon: 'outlet'
     }
   ];
 
