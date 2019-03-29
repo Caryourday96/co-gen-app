@@ -21,12 +21,12 @@ const routes: Routes = [
   {
     path: 'carbon',
     loadChildren: './carbon/carbon.module#CarbonPageModule',
-    canActivate: [AuthGuard]
+   // canActivate: [AuthGuard]
   },
   {
     path: 'electricity',
     loadChildren: './electricity/electricity.module#ElectricityPageModule',
-    canActivate: [AuthGuard]
+   // canActivate: [AuthGuard]
   },
 
   {
@@ -41,12 +41,12 @@ const routes: Routes = [
   {
     path: 'e-daily',
     loadChildren: './e-daily/e-daily.module#EDailyPageModule',
-    canActivate: [AuthGuard]
+    //canActivate: [AuthGuard]
   },
   {
     path: 'e-weekly',
     loadChildren: './e-weekly/e-weekly.module#EWeeklyPageModule',
-    canActivate: [AuthGuard]
+   // canActivate: [AuthGuard]
   },
   {
     path: 'about',

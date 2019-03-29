@@ -19,9 +19,10 @@ import * as firebase from 'firebase/app';
 
 import '@firebase/firestore'
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireModule } from '@angular/fire';
 
 
-firebase.initializeApp(environment.firebase);
+// firebase.initializeApp(environment.firebase);
 
 @NgModule({
   declarations: [AppComponent],
@@ -32,6 +33,7 @@ firebase.initializeApp(environment.firebase);
     IonicModule.forRoot(),
     AppRoutingModule,
     AngularFireAuthModule,
+    AngularFireModule.initializeApp(environment.firebase),
     HttpClientModule,
     AngularFirestoreModule
   ],

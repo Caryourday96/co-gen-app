@@ -29,6 +29,11 @@ export class AppComponent {
       title: 'Electricity',
       url: '/electricity',
       icon: 'outlet'
+    },
+    {
+      title: 'E-weekly',
+      url: '/e-weekly',
+      icon: 'outlet'
     }
   ];
 

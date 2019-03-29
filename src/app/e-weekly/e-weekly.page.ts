@@ -2,6 +2,7 @@ import { PowerService } from "./../services/power.service";
 import { Component, OnInit, ViewChild } from "@angular/core";
 import { Chart } from "chart.js";
 import { NavController } from "@ionic/angular";
+import { dataset } from '../dataset';
 
 @Component({
   selector: "app-e-weekly",
@@ -17,10 +18,11 @@ export class EWeeklyPage implements OnInit {
     private powerService: PowerService
   ) {}
 
-  ngOnInit() {
-    this.powerService.load().subscribe((powerData)=> {
-        this.data = powerData;
-    });
+  async ngOnInit() {
+    // this.powerService.writeData(dataset);
+
+    this.data = await this.powerService.load();
+
     this.bubbleChart = new Chart(this.bubbleCanvas.nativeElement, {
       type: "bar",
       data: {
