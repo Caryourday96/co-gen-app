@@ -17,8 +17,8 @@ export class AppComponent {
     },
     {
       title: 'About',
-      url: '/list',
-      icon: 'list'
+      url: '/about',
+      icon: 'information-circle'
     },
     {
       title: 'Carbon Dioxide',
@@ -31,24 +31,8 @@ export class AppComponent {
       icon: 'outlet'
     },
     {
-      title: 'E-Daily',
-      url: '/e-daily',
-      icon: 'outlet'
-    },
-    {
-      title: 'E-Weekly',
+      title: 'E-weekly',
       url: '/e-weekly',
-      icon: 'outlet'
-    }
-    ,
-    {
-      title: 'E-monthly',
-      url: '/e-monthly',
-      icon: 'outlet'
-    },
-    {
-      title: 'CO2-Daily',
-      url: '/co2-daily',
       icon: 'outlet'
     }
   ];

@@ -5,13 +5,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { EWeeklyPage } from './e-weekly.page';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AboutPage } from './about.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: EWeeklyPage
+    component: AboutPage
   }
 ];
 
@@ -20,9 +19,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    AngularFirestoreModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [EWeeklyPage]
+  declarations: [AboutPage]
 })
-export class EWeeklyPageModule {}
+export class AboutPageModule {}

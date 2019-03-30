@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   {
@@ -9,39 +10,48 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: './home/home.module#HomePageModule'
+    loadChildren: './home/home.module#HomePageModule',
+    
   },
   {
     path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
+    loadChildren: './list/list.module#ListPageModule',
+    
   },
-  { 
-    path: 'carbon', 
-  loadChildren: './carbon/carbon.module#CarbonPageModule' 
+  {
+    path: 'carbon',
+    loadChildren: './carbon/carbon.module#CarbonPageModule',
+   // canActivate: [AuthGuard]
   },
-  { 
-    path: 'electricity', 
-  loadChildren: './electricity/electricity.module#ElectricityPageModule' 
-  },
-
-  { 
-    path: 'login', 
-  loadChildren: './login/login.module#LoginPageModule' 
+  {
+    path: 'electricity',
+    loadChildren: './electricity/electricity.module#ElectricityPageModule',
+   // canActivate: [AuthGuard]
   },
 
-  { 
-    path: 'signup', 
-    loadChildren: './signup/signup.module#SignupPageModule' 
+  {
+    path: 'login',
+    loadChildren: './login/login.module#LoginPageModule'
   },
-  { path: 'e-daily',
-   loadChildren: './e-daily/e-daily.module#EDailyPageModule' },
 
-
-  { path: 'e-weekly', 
-  loadChildren: './e-weekly/e-weekly.module#EWeeklyPageModule' },
-  { path: 'co2-daily', loadChildren: './co2-daily/co2-daily.module#CO2DailyPageModule' },
-  { path: 'e-monthly', loadChildren: './e-monthly/e-monthly.module#EMonthlyPageModule' }
-
+  {
+    path: 'signup',
+    loadChildren: './signup/signup.module#SignupPageModule'
+  },
+  {
+    path: 'e-daily',
+    loadChildren: './e-daily/e-daily.module#EDailyPageModule',
+    //canActivate: [AuthGuard]
+  },
+  {
+    path: 'e-weekly',
+    loadChildren: './e-weekly/e-weekly.module#EWeeklyPageModule',
+   // canActivate: [AuthGuard]
+  },
+  {
+    path: 'about',
+    loadChildren: './about/about.module#AboutPageModule'
+  }
 
 ];
 
@@ -51,4 +61,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
