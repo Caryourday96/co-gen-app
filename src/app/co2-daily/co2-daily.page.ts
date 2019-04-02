@@ -10,12 +10,12 @@ import { NavController } from '@ionic/angular';
 export class CO2DailyPage implements OnInit {
 
  
-    @ViewChild('barCanvas') barCanvas
-  barChart: any;
+    @ViewChild('lineCanvas') lineCanvas
+  lineChart: any;
 constructor(public navCtrl : NavController) { }
 
   ngOnInit() {
-    this.barChart = new Chart(this.barCanvas.nativeElement, {
+    this.lineChart = new Chart(this.lineCanvas.nativeElement, {
 
       type: 'line',
       data: {
