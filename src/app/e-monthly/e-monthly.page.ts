@@ -26,13 +26,10 @@ export class EMonthlyPage implements OnInit {
   
   ngOnInit() {
 
-  }
+//   firebase.database().ref('usage/').on('value', resp =>{
+//       console.log(resp);
+//   })
 
-  
-  login() {
-  firebase.database().ref('usage/').on('value', resp =>{
-      console.log(resp);
-  })
   
     //   ().subscribe(
     //     data => {
