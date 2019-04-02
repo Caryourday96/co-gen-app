@@ -9,12 +9,12 @@ import { NavController } from '@ionic/angular';
 })
 export class CO2WeeklyPage implements OnInit {
 
-  @ViewChild('bubbleCanvas') bubbleCanvas
-  bubbleChart: any;
+  @ViewChild('lineCanvas') lineCanvas
+  lineChart: any;
   constructor(public navCtrl : NavController) { }
 
   ngOnInit() {
-    this.bubbleChart = new Chart(this.bubbleCanvas.nativeElement, {
+    this.lineChart = new Chart(this.lineCanvas.nativeElement, {
 
       type: 'bar',
       data: {
