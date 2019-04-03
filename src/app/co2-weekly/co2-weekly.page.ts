@@ -1,8 +1,6 @@
-import { PowerService } from "./../services/power.service";
 import { Component, OnInit, ViewChild } from "@angular/core";
 import { Chart } from "chart.js";
 import { NavController } from "@ionic/angular";
-import { dataset } from '../dataset';
 
 @Component({
   selector: 'app-co2-weekly',
@@ -10,18 +8,15 @@ import { dataset } from '../dataset';
   styleUrls: ['./co2-weekly.page.scss'],
 })
 export class Co2WeeklyPage implements OnInit {
-    @ViewChild("bubbleCanvas") barCanvas;
+    @ViewChild("barCanvas") barCanvas;
     barChart: any;
     data: any;
     constructor(
       public navCtrl: NavController,
-      private powerService: PowerService
     ) {}
   
   async ngOnInit() {
-      // this.powerService.writeData(dataset);
-
-      this.data = await this.powerService.load();
+    
 
     this.barChart = new Chart(this.barCanvas.nativeElement, {
       type: 'bar',
