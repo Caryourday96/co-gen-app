@@ -10,14 +10,14 @@ import { dataset } from '../dataset';
   styleUrls: ['./co2-weekly.page.scss'],
 })
 export class Co2WeeklyPage implements OnInit {
-  @ViewChild('barCanvas') barCanvas;
-  barChart: any;
-  data: any;
-  constructor(
-      public navCtrl : NavController,
+    @ViewChild("bubbleCanvas") barCanvas;
+    barChart: any;
+    data: any;
+    constructor(
+      public navCtrl: NavController,
       private powerService: PowerService
-      ) {}
-
+    ) {}
+  
   async ngOnInit() {
       // this.powerService.writeData(dataset);
 
@@ -26,7 +26,7 @@ export class Co2WeeklyPage implements OnInit {
     this.barChart = new Chart(this.barCanvas.nativeElement, {
       type: 'bar',
       data: {
-          labels: ["BJP", "INC", "AAP", "CPI", "CPI-M", "NCP"],
+          labels: ["VTI", "SRI", "HIN", "PIN", "NPM", "BVM"],
           datasets: [{
               label: '# Daily Annotation',
               data: [200, 50, 30, 15, 20, 34],
