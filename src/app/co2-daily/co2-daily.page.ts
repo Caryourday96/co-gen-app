@@ -19,7 +19,7 @@ constructor(public navCtrl : NavController) { }
 
       type: 'line',
       data: {
-          labels: ["BJP", "INC", "AAP", "CPI", "CPI-M", "NCP"],
+          labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
           datasets: [{
               label: '# Daily Annotation',
               data: [200, 50, 30, 15, 20, 34],
