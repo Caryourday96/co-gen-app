@@ -1,6 +1,6 @@
-import { Component, OnInit, ViewChild  } from '@angular/core';
-import {Chart} from 'chart.js';
-import { NavController } from '@ionic/angular';
+import { Component, OnInit, ViewChild } from "@angular/core";
+import { Chart } from "chart.js";
+import { NavController } from "@ionic/angular";
 
 @Component({
   selector: 'app-co2-weekly',
@@ -8,17 +8,20 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./co2-weekly.page.scss'],
 })
 export class Co2WeeklyPage implements OnInit {
+    @ViewChild("barCanvas") barCanvas;
+    barChart: any;
+    data: any;
+    constructor(
+      public navCtrl: NavController,
+    ) {}
+  
+  async ngOnInit() {
+    
 
-  @ViewChild('lineCanvas') lineCanvas
-  lineChart: any;
-  constructor(public navCtrl : NavController) { }
-
-  ngOnInit() {
-    this.lineChart = new Chart(this.lineCanvas.nativeElement, {
-
+    this.barChart = new Chart(this.barCanvas.nativeElement, {
       type: 'bar',
       data: {
-          labels: ["BJP", "INC", "AAP", "CPI", "CPI-M", "NCP"],
+          labels: ["VTI", "SRI", "HIN", "PIN", "NPM", "BVM"],
           datasets: [{
               label: '# Daily Annotation',
               data: [200, 50, 30, 15, 20, 34],
@@ -43,16 +46,19 @@ export class Co2WeeklyPage implements OnInit {
       },
       options: {
           scales: {
-              yAxes: [{
+              yAxes: [
+                  {
                   ticks: {
                       beginAtZero:true
                   }
-              }]
-          }
+              }
+            ]
       }
-  
+    }
+
   });
-  }
-  }
+}
+}
+
   
   
