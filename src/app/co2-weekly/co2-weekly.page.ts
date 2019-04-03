@@ -7,7 +7,7 @@ import { NavController } from '@ionic/angular';
   templateUrl: './co2-weekly.page.html',
   styleUrls: ['./co2-weekly.page.scss'],
 })
-export class CO2WeeklyPage implements OnInit {
+export class Co2WeeklyPage implements OnInit {
 
   @ViewChild('lineCanvas') lineCanvas
   lineChart: any;
