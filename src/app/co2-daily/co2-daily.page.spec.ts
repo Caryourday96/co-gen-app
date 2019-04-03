@@ -25,3 +25,4 @@ describe('CO2DailyPage', () => {
     expect(component).toBeTruthy();
   });
 });
+
