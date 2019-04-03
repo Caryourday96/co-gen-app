@@ -1,4 +1,3 @@
-import { AuthenticationService } from './../services/authentication.service';
 import { Component, OnInit, ViewChild  } from '@angular/core';
 import {Chart} from 'chart.js';
 import {ActivatedRoute, Router } from '@angular/router';
