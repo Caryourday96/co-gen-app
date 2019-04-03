@@ -1,5 +1,8 @@
+import { AuthenticationService } from './../services/authentication.service';
 import { Component, OnInit, ViewChild  } from '@angular/core';
 import {Chart} from 'chart.js';
+import {ActivatedRoute, Router } from '@angular/router';
+import { AngularFireAuth } from '@angular/fire/auth';
 import { NavController } from '@ionic/angular';
 
 @Component({
@@ -18,9 +21,9 @@ export class Co2MonthlyPage implements OnInit {
 
       type: 'bar',
       data: {
-          labels: ["BJP", "INC", "AAP", "CPI", "CPI-M", "NCP"],
+          labels: ["January", "February", "March", "April", "May", "June", "July", "August" , "September" , "October" , "November" , "December"],
           datasets: [{
-              label: '# Daily Annotation',
+              label: '# Co2 ',
               data: [200, 50, 30, 15, 20, 34],
               backgroundColor: [
                   'rgba(255, 99, 132, 0.2)',
