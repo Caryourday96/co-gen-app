@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import * as core from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
@@ -22,9 +22,9 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire';
 
 
-// firebase.initializeApp(environment.firebase);
+firebase.initializeApp(environment.firebase);
 
-@NgModule({
+@core.NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [
